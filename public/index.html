@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Support Bro · </title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main class="layout">
+        <section class="hero hero-shell">
+            <div class="hero-content">
+                <img src="./techsupportbrologo.png" alt="Tech Support Bro" class="hero-logo">
+                <div class="hero-actions">
+                    <button id="startTree" class="primary">Start troubleshooting</button>
+                    <a class="secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSfoxhKvog1UU0YnpnK1U1toIyQkNborx3IAVtJOpc-5VwKhAg/viewform?usp=dialog" target="_blank" rel="noopener">
+                        Escalate to Garin
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="grid-lines"></div>
+                <div class="tablet-stage" id="tabletStage">
+                    <div class="tablet-shadow"></div>
+                    <div class="tablet" id="tabletModel">
+                        <div class="tablet-face"></div>
+                        <div class="tablet-back">
+                            <img class="tablet-back-logo" draggable="false" src="./techsupportbrologo.png" alt="Tech Support Bro logo">
+                        </div>
+                        <div class="tablet-screen">
+                            <video autoplay muted loop playsinline>
+                                <source src="./ITChatBuddyAvatar.mp4" type="video/mp4">
+                                <source src="./ITChatBuddyAvatar.mov" type="video/quicktime">
+                                Your browser does not support inline video playback.
+                            </video>
+                            <h2 class="tablet-title">Tech Support Bro</h2>
+                            <span class="tablet-caption">"What can I fix for you today?"</span>
+                            <div class="tablet-screen-indicator"></div>
+                        </div>
+                    </div>
+                    <div class="floating-badges">
+                        <div class="floating-badge">Fix my home Wi-Fi</div>
+                        <div class="floating-badge">Speed up my laptop</div>
+                        <div class="floating-badge">Reset forgotten passwords</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tree-card" id="treePanel">
+            <div class="tree-header">
+                <div>
+                    <p class="node-path" id="nodePath">Start</p>
+                    <h2 id="nodeTitle">Load plan</h2>
+                    <p class="node-summary" id="nodeSummary">Click “Start troubleshooting” to load the root of the .</p>
+                </div>
+                <div class="tree-controls">
+                    <button class="ghost" id="backBtn" disabled>Back</button>
+                    <button class="ghost" id="restartBtn" disabled>Start over</button>
+                    <button class="ghost" id="copyPlanBtn" disabled>Copy plan</button>
+                </div>
+            </div>
+            <div class="node-body">
+                <div class="node-response" id="nodeResponse">
+                    The  instructions will appear here after you pick a branch.
+                </div>
+                <div class="node-tags" id="nodeTags"></div>
+                <div class="node-links" id="nodeLinks"></div>
+                <div class="node-children" id="nodeChildren"></div>
+            </div>
+        </section>
+
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+

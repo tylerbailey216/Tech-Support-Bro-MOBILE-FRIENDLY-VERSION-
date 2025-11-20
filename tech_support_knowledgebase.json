@@ -1,0 +1,1093 @@
+[
+  {
+    "intent": "pc_no_power",
+    "triggers": [
+      "computer won't start",
+      "desktop no lights",
+      "no power",
+      "no response power button",
+      "pc dead",
+      "press power nothing",
+      "won't turn on"
+    ],
+    "response": "Unplug AC power and remove battery (if removable). Hold power button for 30 seconds to discharge. Reseat power cable, try a known‑good outlet and surge protector bypass. Check PSU switch (I/O). If desktop, reseat 24‑pin and CPU power connectors. For laptops, try known‑good charger. If still dead: suspect PSU/charger, DC jack, motherboard, or power button cable.",
+    "categories": [
+      "power",
+      "hardware"
+    ],
+    "vendors": [
+      "Dell",
+      "HP",
+      "Lenovo",
+      "Acer",
+      "ASUS",
+      "MSI",
+      "Apple (Intel/M1+)"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "laptop_battery_not_charging",
+    "triggers": [
+      "battery not charging",
+      "charging light blinking",
+      "plugged in not charging",
+      "slow charging",
+      "won't charge"
+    ],
+    "response": "Confirm original charger wattage. Inspect cable/port for damage; clean lint. With AC connected, boot to OS and check battery health. Try battery driver reset (Windows Device Manager → Batteries → uninstall 'Microsoft ACPI...' then Scan for hardware changes). On macOS, run battery diagnostics and reset SMC (Intel Macs). If charge resumes only when off, suspect low‑watt adapter or bad battery.",
+    "categories": [
+      "power",
+      "mobile",
+      "laptop"
+    ],
+    "vendors": [
+      "Dell",
+      "HP",
+      "Lenovo",
+      "Apple",
+      "Acer",
+      "ASUS"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "black_screen_no_display",
+    "triggers": [
+      "black screen",
+      "fans run but no display",
+      "monitor says no signal",
+      "no display"
+    ],
+    "response": "For desktops: verify monitor input/source, cable, and GPU power leads. Try motherboard video with GPU removed. Reseat RAM and GPU, test one RAM stick. For laptops: shine a flashlight at screen (faint image = backlight issue). External display test isolates panel vs. GPU. If POST beeps/LED codes present, decode from vendor guide.",
+    "categories": [
+      "power",
+      "display",
+      "hardware"
+    ],
+    "vendors": [
+      "Dell",
+      "HP",
+      "Lenovo",
+      "MSI",
+      "ASUS",
+      "Acer",
+      "Apple"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "boot_loop",
+    "triggers": [
+      "automatic repair loop",
+      "boot loop",
+      "endless spinning dots",
+      "restarts repeatedly"
+    ],
+    "response": "Disconnect all USB devices. Enter BIOS and 'Load Optimized Defaults'. Check boot order. For Windows: power‑cycle into WinRE → Startup Repair; if fails, Safe Mode → uninstall recent drivers/updates. For macOS: Safe Mode, then run Disk Utility First Aid. Suspects: bad driver, corrupt update, failing disk, RAM issues.",
+    "categories": [
+      "boot",
+      "os",
+      "windows",
+      "macos"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "beep_codes",
+    "triggers": [
+      "beep codes",
+      "bios beeps",
+      "post beeps"
+    ],
+    "response": "Count beeps or note LED pattern; look up the vendor’s POST code chart. Common causes: RAM not seated, GPU issues, CPU/overheat. Reseat components and test one RAM module at a time.",
+    "categories": [
+      "hardware",
+      "diagnostics"
+    ],
+    "vendors": [
+      "Dell",
+      "HP",
+      "Lenovo",
+      "ASUS",
+      "Gigabyte",
+      "MSI"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "smells_burning_or_clicking",
+    "triggers": [
+      "burning smell",
+      "clicking drive",
+      "electrical smell",
+      "popping sound computer"
+    ],
+    "response": "Immediately power off and unplug. Inspect for debris in fan, cables touching fans, or liquid damage. Clicking suggests failing HDD—do NOT keep powering on; prioritize data recovery. Recommend professional hardware inspection before reuse.",
+    "categories": [
+      "safety",
+      "hardware",
+      "storage"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "slow_computer",
+    "triggers": [
+      "pc lagging",
+      "running slow",
+      "slow computer",
+      "slow laptop",
+      "system performance"
+    ],
+    "response": "Check Task Manager/Activity Monitor for high CPU/RAM/disk. Disable heavy startup apps. Ensure 20% free disk space. On HDD systems, upgrade to SSD. Run malware scan. Update drivers and OS. Clean dust and ensure airflow. Consider RAM upgrade if frequently >80% utilization.",
+    "categories": [
+      "performance",
+      "windows",
+      "macos",
+      "linux"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "freezing_crashing",
+    "triggers": [
+      "app not responding",
+      "freezing",
+      "pc hangs",
+      "random freeze",
+      "system crash"
+    ],
+    "response": "Run memory test (Windows Memory Diagnostic/ MemTest). Check SMART/Drive health. Update GPU/chipset drivers. Watch temps with HWMonitor/Intel/AMD utilities; repaste/clean if throttling. Review Event Viewer/Console for repeating errors. Test in Safe Mode to isolate third‑party drivers.",
+    "categories": [
+      "performance",
+      "diagnostics"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "overheating_fans_loud",
+    "triggers": [
+      "cpu running hot",
+      "fans loud",
+      "hot laptop",
+      "overheating",
+      "thermal throttling"
+    ],
+    "response": "Clean vents and fans; replace thermal paste if aged. Elevate rear of laptop or use a cooling pad. Verify that vents are not blocked. Limit turbo boost when on battery. Rebuild dust‑clogged desktops and optimize fan curves in BIOS. Replace failing fans.",
+    "categories": [
+      "thermal",
+      "hardware"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "low_disk_space",
+    "triggers": [
+      "c drive full",
+      "disk full",
+      "low disk space",
+      "storage almost full"
+    ],
+    "response": "Clear temp files and browser caches. Uninstall unused apps. Move large videos/photos to external or cloud. On Windows: Storage Sense and 'Clean up system files'. On macOS: Manage Storage → Recommendations. Check for runaway log folders or cloud cache.",
+    "categories": [
+      "storage",
+      "windows",
+      "macos"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "app_slow_or_unresponsive",
+    "triggers": [
+      "app slow",
+      "app unresponsive",
+      "program not responding"
+    ],
+    "response": "Update the app. Clear cache/profile where safe. Check for extensions causing slowdowns. Validate enough RAM/disk. Try a fresh user profile to isolate corruption. If only one file is slow, check network/cloud path latency.",
+    "categories": [
+      "apps"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "wifi_dropping",
+    "triggers": [
+      "weak wifi",
+      "wifi disconnects",
+      "wifi keeps dropping",
+      "wifi sucks",
+      "wifi unstable"
+    ],
+    "response": "Power‑cycle modem+router (full 60s). Reposition router higher/central, away from microwaves and thick walls. Separate 2.4 GHz and 5 GHz SSIDs; prefer 5 GHz near router, 2.4 GHz for range. Update router firmware and client drivers. Consider a mesh system for larger homes.",
+    "categories": [
+      "network",
+      "wifi"
+    ],
+    "vendors": [
+      "Netgear",
+      "TP-Link",
+      "Linksys",
+      "Eero",
+      "Ubiquiti"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "cant_connect_wifi",
+    "triggers": [
+      "can't connect to wifi",
+      "cannot join network",
+      "wifi authentication problem",
+      "wrong password wifi"
+    ],
+    "response": "Confirm password and Wi‑Fi band. Forget and re‑add network. Ensure airplane mode off and adapter enabled. For Windows: Network Reset; for macOS/iOS: Reset Network Settings. Check MAC filtering on router. Update drivers/firmware.",
+    "categories": [
+      "network",
+      "wifi",
+      "windows",
+      "macos",
+      "ios",
+      "android"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "ethernet_not_detected",
+    "triggers": [
+      "ethernet not detected",
+      "no internet wired",
+      "no network cable",
+      "unidentified network"
+    ],
+    "response": "Try a different Ethernet cable and port on router/switch. Verify link lights. Update NIC driver; disable/enable adapter. Set IPv4 to DHCP (auto). Test another device on same cable to isolate port vs. PC issue.",
+    "categories": [
+      "network",
+      "ethernet"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "router_setup",
+    "triggers": [
+      "new router setup",
+      "router not working out of box",
+      "setup router"
+    ],
+    "response": "Connect modem → router WAN. Access router UI (usually 192.168.0.1 or 192.168.1.1). Change admin password, set SSIDs for 2.4/5 GHz, enable WPA2/WPA3, update firmware. Disable WPS. For ISP combo modems, set to bridge mode if using your own router.",
+    "categories": [
+      "network",
+      "router"
+    ],
+    "vendors": [
+      "Netgear",
+      "TP-Link",
+      "Linksys",
+      "Arris",
+      "Xfinity",
+      "Spectrum"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "dns_issues",
+    "triggers": [
+      "dns not resolving",
+      "dns server not responding",
+      "website not loading but internet works"
+    ],
+    "response": "Flush DNS cache. Try a known public DNS (1.1.1.1 or 8.8.8.8). Restart router. Check VPN/Firewall rules blocking DNS. On Windows: ipconfig /flushdns; On macOS: dscacheutil -flushcache.",
+    "categories": [
+      "network",
+      "dns"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "vpn_cannot_connect",
+    "triggers": [
+      "vpn authentication failed",
+      "vpn unstable",
+      "vpn won't connect"
+    ],
+    "response": "Verify credentials and 2FA. Check date/time skew. Test on another network to rule out ISP blocking. Toggle protocols (WireGuard/OpenVPN/IPSec). Ensure DNS and split‑tunnel rules are correct. Update client and certificates.",
+    "categories": [
+      "network",
+      "vpn"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "printer_wifi_connect",
+    "triggers": [
+      "can't find printer network",
+      "printer offline wifi",
+      "printer won't connect to wifi"
+    ],
+    "response": "Ensure printer is on same 2.4 GHz SSID if it doesn't support 5 GHz. Run printer's wireless setup assistant. Assign a DHCP reservation so IP stays consistent. Install vendor driver/software rather than generic AirPrint only.",
+    "categories": [
+      "printers",
+      "network"
+    ],
+    "vendors": [
+      "HP",
+      "Canon",
+      "Epson",
+      "Brother"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "network_slow_speedtests_ok",
+    "triggers": [
+      "internet slow but speed test ok",
+      "video buffering but fast speed test"
+    ],
+    "response": "Problem may be Wi‑Fi congestion, DNS, or specific service throttling. Try wired connection to compare. Change DNS, test different server/CDN, or disable VPN. Check for QoS or Smart Connect misconfiguration on router.",
+    "categories": [
+      "network",
+      "wifi",
+      "diagnostics"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "captive_portal",
+    "triggers": [
+      "captive portal",
+      "hotel wifi login page not showing",
+      "wifi asks to sign in"
+    ],
+    "response": "Open a non‑HTTPS page (e.g., example.com) to trigger the portal. Disable custom DNS/VPN until logged in. Forget and rejoin the network. Some portals block certain devices—ask venue for MAC registration.",
+    "categories": [
+      "network",
+      "wifi",
+      "travel"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "reset_microsoft_password",
+    "triggers": [
+      "can't sign in microsoft",
+      "forgot microsoft password",
+      "reset microsoft password",
+      "reset outlook password"
+    ],
+    "response": "Use Microsoft Account Recovery to verify identity and set a new password, then enable 2FA via Microsoft Authenticator. Review recent sign‑ins and sign‑out from unrecognized sessions.",
+    "categories": [
+      "accounts",
+      "security",
+      "windows"
+    ],
+    "vendors": [
+      "Microsoft"
+    ],
+    "video_links": {
+      "Microsoft": {
+        "channel": "Microsoft Support",
+        "query": "Reset Microsoft account password"
+      }
+    },
+    "notes": ""
+  },
+  {
+    "intent": "reset_google_password",
+    "triggers": [
+      "forgot gmail password",
+      "recover gmail",
+      "reset google password"
+    ],
+    "response": "Go to Google Account Recovery, confirm recovery email/phone, then set a strong password and turn on 2‑Step Verification. Review Security Checkup and revoke unknown devices.",
+    "categories": [
+      "accounts",
+      "security",
+      "android",
+      "web"
+    ],
+    "vendors": [
+      "Google"
+    ],
+    "video_links": {
+      "Google": {
+        "channel": "Google Workspace / YouTube Help",
+        "query": "Recover Google Account or Gmail"
+      }
+    },
+    "notes": ""
+  },
+  {
+    "intent": "reset_apple_id_password",
+    "triggers": [
+      "forgot apple id password",
+      "icloud password reset",
+      "reset apple id"
+    ],
+    "response": "Use iforgot.apple.com or Settings → Your Name → Password & Security → Change Password. Turn on two‑factor authentication and generate recovery keys. Review device list and remove unknown devices.",
+    "categories": [
+      "accounts",
+      "security",
+      "ios",
+      "macos"
+    ],
+    "vendors": [
+      "Apple"
+    ],
+    "video_links": {
+      "Apple": {
+        "channel": "Apple Support",
+        "query": "If you forgot your Apple ID password"
+      }
+    },
+    "notes": ""
+  },
+  {
+    "intent": "account_hacked",
+    "triggers": [
+      "account hacked",
+      "email sending spam",
+      "suspicious login"
+    ],
+    "response": "Immediately change password and enable 2FA. Check recovery email/phone for tampering. Review recent activity/devices. Run malware scan on your computer and phone. Warn contacts if spam was sent.",
+    "categories": [
+      "security",
+      "accounts"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "fake_support_popups",
+    "triggers": [
+      "call this number virus",
+      "fake virus popup",
+      "microsoft pop up scam",
+      "tech support scam"
+    ],
+    "response": "Close the browser tab/window; do NOT call numbers or allow remote access. Clear browser cache. Run AV scan and check startup items. Educate users that real vendors don’t cold‑call or lock screens via browser pop‑ups.",
+    "categories": [
+      "security",
+      "education"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "enable_mfa",
+    "triggers": [
+      "enable 2fa",
+      "turn on mfa",
+      "two factor authentication setup"
+    ],
+    "response": "Enable MFA on email, banking, and social accounts. Prefer app‑based (Authenticator, Google Authenticator) over SMS. Store backup codes securely. Consider security keys (FIDO2) for admins.",
+    "categories": [
+      "security",
+      "accounts"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "windows_update_stuck",
+    "triggers": [
+      "update loop windows",
+      "windows update stuck",
+      "working on updates forever"
+    ],
+    "response": "Wait 30–60 minutes, then force restart if truly stuck. Run Windows Update Troubleshooter, stop 'wuauserv' and clear SoftwareDistribution folder, reboot, and try again. Ensure at least 20 GB free space.",
+    "categories": [
+      "windows",
+      "updates"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "macos_update_issue",
+    "triggers": [
+      "mac can't install update",
+      "mac update failed",
+      "macos update error"
+    ],
+    "response": "Check free disk space, safe boot, and run Disk Utility First Aid. If still failing, download the Combo Installer when available. Ensure stable power and network. Backup before retry.",
+    "categories": [
+      "macos",
+      "updates"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "app_wont_open",
+    "triggers": [
+      "app crashes on launch",
+      "app won't open",
+      "program won't start"
+    ],
+    "response": "Update or reinstall the app. Delete corrupted cache/profile folders. On macOS, allow app in Privacy & Security if flagged. Check Event Viewer/Console logs for faulting module.",
+    "categories": [
+      "apps",
+      "windows",
+      "macos"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "browser_popups_ads",
+    "triggers": [
+      "browser hijacked",
+      "search engine changed",
+      "too many popups",
+      "weird homepage"
+    ],
+    "response": "Reset browser settings, remove unknown extensions, and run an antimalware scan. Set default search engine and homepage. Consider using a reputable ad blocker and keep the browser updated.",
+    "categories": [
+      "browser",
+      "security"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "office_activation",
+    "triggers": [
+      "microsoft 365 activation failed",
+      "office not activated",
+      "word says unlicensed"
+    ],
+    "response": "Confirm license assignment on the account, sign out/in, and run activation troubleshooters. Ensure date/time correct. If device count exceeded, deactivate old devices from the account portal.",
+    "categories": [
+      "windows",
+      "apps"
+    ],
+    "vendors": [
+      "Microsoft"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "printer_offline",
+    "triggers": [
+      "can't print",
+      "print spooler stuck",
+      "printer offline",
+      "won't print"
+    ],
+    "response": "Power‑cycle printer and clear print queue. Reinstall vendor driver/software. Set printer to use its IP (Standard TCP/IP port) and give it a DHCP reservation. Ensure it’s on the same network/VLAN.",
+    "categories": [
+      "printers",
+      "network"
+    ],
+    "vendors": [
+      "HP",
+      "Canon",
+      "Epson",
+      "Brother"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "paper_jam",
+    "triggers": [
+      "paper jam",
+      "paper stuck",
+      "printer jam"
+    ],
+    "response": "Open all doors and remove paper carefully following the arrow guides. Check for torn pieces. Fan fresh paper, ensure correct weight and humidity. Clean rollers if recurring. Avoid overfilling tray.",
+    "categories": [
+      "printers"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "scan_to_pc",
+    "triggers": [
+      "can't scan to pc",
+      "scan software not working",
+      "scanner not detected"
+    ],
+    "response": "Install full vendor suite (not driver‑only). Ensure desktop firewall allows the scanner service. Try USB first to confirm function, then configure network scanning with correct destination and credentials.",
+    "categories": [
+      "printers",
+      "scanners"
+    ],
+    "vendors": [
+      "HP",
+      "Canon",
+      "Epson",
+      "Brother",
+      "Fujitsu"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "bluetooth_not_pairing",
+    "triggers": [
+      "airpods not connecting",
+      "bluetooth won't pair",
+      "can't connect bluetooth",
+      "pairing failed"
+    ],
+    "response": "Turn Bluetooth off/on and forget the device, then re‑pair. Charge both devices. Keep within 1–2 meters and avoid 2.4 GHz interference. Update firmware. For Windows, remove hidden Bluetooth entries in Device Manager and reboot.",
+    "categories": [
+      "bluetooth",
+      "peripherals"
+    ],
+    "vendors": [
+      "Apple",
+      "Samsung",
+      "Sony",
+      "Bose",
+      "JBL",
+      "Logitech"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "webcam_not_detected",
+    "triggers": [
+      "camera not working",
+      "camera unavailable",
+      "webcam not detected"
+    ],
+    "response": "Check privacy settings and app permissions. Close other apps that may hold the camera. Update drivers/firmware. Try a different USB port. On macOS, grant camera access in System Settings → Privacy & Security.",
+    "categories": [
+      "peripherals",
+      "privacy"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "hdmi_no_signal",
+    "triggers": [
+      "hdmi no signal",
+      "second monitor not detected",
+      "tv not showing pc"
+    ],
+    "response": "Power‑cycle display and PC. Use correct HDMI input and quality cable. Set display to 'Extend' not 'Second screen only'. Update GPU drivers. Some laptops require Fn+Display toggle. Try a different port or adapter.",
+    "categories": [
+      "display",
+      "peripherals"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "iphone_storage_full",
+    "triggers": [
+      "cannot take photos iphone",
+      "icloud full",
+      "iphone storage full"
+    ],
+    "response": "Offload unused apps, clear Messages attachments, and move photos/videos to iCloud or a computer. Review 'Other/System Data'. Empty Recently Deleted album. Consider upgrading iCloud storage or using local backups.",
+    "categories": [
+      "ios",
+      "storage"
+    ],
+    "vendors": [
+      "Apple"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "android_storage_full",
+    "triggers": [
+      "android storage full",
+      "can't download apps android",
+      "insufficient storage android"
+    ],
+    "response": "Clear app caches, uninstall unused apps, move media to SD card/cloud, and check Downloads folder. Use Files by Google cleanup. Empty app trash (e.g., Photos).",
+    "categories": [
+      "android",
+      "storage"
+    ],
+    "vendors": [
+      "Google",
+      "Samsung"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "sms_mms_issues",
+    "triggers": [
+      "can't send text",
+      "mms not sending",
+      "not receiving texts"
+    ],
+    "response": "Toggle Airplane mode, verify carrier settings/APN, and ensure data is on for MMS. Clear Messages cache (Android) or reset Network Settings (iOS). Confirm number not blocked and SIM is active.",
+    "categories": [
+      "mobile",
+      "carrier"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "app_keeps_crashing_mobile",
+    "triggers": [
+      "app keeps crashing",
+      "iphone app closes",
+      "mobile app crashing"
+    ],
+    "response": "Update the app and OS. Force stop and clear cache (Android). Reinstall the app. Check remaining storage and free up space. If only on cellular, test on Wi‑Fi.",
+    "categories": [
+      "mobile",
+      "apps"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "phone_battery_drain",
+    "triggers": [
+      "android battery drain",
+      "battery life poor",
+      "iphone battery drain",
+      "phone battery drains fast"
+    ],
+    "response": "Review battery usage to find top drainers. Disable background refresh, reduce screen brightness, and turn off always‑on display if needed. Update apps/OS. Replace aging battery if health is low.",
+    "categories": [
+      "mobile",
+      "power"
+    ],
+    "vendors": [
+      "Apple",
+      "Samsung",
+      "Google"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "iphone_cannot_update",
+    "triggers": [
+      "ios update error",
+      "iphone won't update",
+      "unable to install update iphone"
+    ],
+    "response": "Ensure >50% battery or connect to power, and adequate free space. Try updating via iTunes/Finder. Reset Network Settings if downloads fail. Remove VPN temporarily.",
+    "categories": [
+      "ios",
+      "updates"
+    ],
+    "vendors": [
+      "Apple"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "android_cannot_update",
+    "triggers": [
+      "android won't update",
+      "system update failed android"
+    ],
+    "response": "Charge to >50%, clear Google Play Services cache, ensure storage space, and retry on Wi‑Fi. If OEM‑skinned phones, updates may roll out in stages—wait or sideload official image with care.",
+    "categories": [
+      "android",
+      "updates"
+    ],
+    "vendors": [
+      "Google",
+      "Samsung",
+      "OnePlus"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "recover_deleted_files",
+    "triggers": [
+      "accidentally deleted document",
+      "recover deleted files",
+      "restore file recycle bin"
+    ],
+    "response": "Check Recycle Bin/Trash first. For cloud files, check version history (OneDrive/Google Drive/iCloud). Avoid writing new data to the same disk. Use reputable recovery tools for HDD/SSD/SD cards; success varies.",
+    "categories": [
+      "storage",
+      "backup"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "cloud_sync_issues",
+    "triggers": [
+      "google drive not syncing",
+      "icloud not syncing",
+      "onedrive not syncing"
+    ],
+    "response": "Ensure you’re signed in, online, and not out of storage. Pause/resume sync, then quit and relaunch the client. Check for duplicate/conflicting files and special characters in filenames. Verify selective‑sync/folders.",
+    "categories": [
+      "cloud",
+      "sync"
+    ],
+    "vendors": [
+      "Microsoft",
+      "Google",
+      "Apple"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "set_up_backup",
+    "triggers": [
+      "how to backup pc",
+      "set up backup",
+      "time machine setup",
+      "windows file history"
+    ],
+    "response": "Define 3‑2‑1: three copies, two media, one off‑site. Windows: File History or full‑image backup; macOS: Time Machine; Mobile: cloud photo backups. Test restores periodically.",
+    "categories": [
+      "backup",
+      "strategy"
+    ],
+    "vendors": [
+      "Microsoft",
+      "Apple"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "phishing_basics",
+    "triggers": [
+      "how to spot phishing",
+      "is this email a scam",
+      "phishing tips"
+    ],
+    "response": "Check sender domain, hover over links, look for urgency and spelling errors. Do not open unexpected attachments. When in doubt, contact the company through official channels, not the message links.",
+    "categories": [
+      "security",
+      "education"
+    ],
+    "vendors": [],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "hp_printer_driver_install",
+    "triggers": [
+      "hp printer setup",
+      "hp smart install",
+      "install hp printer driver"
+    ],
+    "response": "Download and install HP Smart or the full driver package. Connect via USB first to confirm printing, then switch to Wi‑Fi and assign a DHCP reservation on your router.",
+    "categories": [
+      "printers",
+      "vendor"
+    ],
+    "vendors": [
+      "HP"
+    ],
+    "video_links": {
+      "HP": {
+        "channel": "HP Support",
+        "query": "Install HP printer using HP Smart"
+      }
+    },
+    "notes": ""
+  },
+  {
+    "intent": "canon_printer_wifi",
+    "triggers": [
+      "canon printer wifi setup",
+      "connect canon printer to wifi"
+    ],
+    "response": "Use the printer’s Wi‑Fi setup wizard to join your 2.4 GHz SSID. Then install Canon’s IJ/MP driver for your OS. Consider assigning a static/DHCP reservation for stability.",
+    "categories": [
+      "printers",
+      "vendor"
+    ],
+    "vendors": [
+      "Canon"
+    ],
+    "video_links": {
+      "Canon": {
+        "channel": "Canon USA",
+        "query": "Connect Canon printer to Wi‑Fi"
+      }
+    },
+    "notes": ""
+  },
+  {
+    "intent": "epson_scan_setup",
+    "triggers": [
+      "cannot scan epson",
+      "epson scan 2 not working",
+      "epson scan setup"
+    ],
+    "response": "Install Epson Scan 2 and ensure firewall allows Epson scan service. Test USB first; then configure network scanning with correct destination folder and credentials.",
+    "categories": [
+      "printers",
+      "vendor"
+    ],
+    "vendors": [
+      "Epson"
+    ],
+    "video_links": {
+      "Epson": {
+        "channel": "Epson Support",
+        "query": "Epson Scan 2 setup"
+      }
+    },
+    "notes": ""
+  },
+  {
+    "intent": "netgear_router_firmware",
+    "triggers": [
+      "netgear router update",
+      "nighthawk update",
+      "update netgear firmware"
+    ],
+    "response": "Log into your Netgear router, back up settings, then check for updates under Administration → Router Update. Apply firmware, reboot, and re‑enable features. Do not power off during update.",
+    "categories": [
+      "router",
+      "vendor"
+    ],
+    "vendors": [
+      "Netgear"
+    ],
+    "video_links": {
+      "Netgear": {
+        "channel": "NETGEAR",
+        "query": "Update Netgear router firmware"
+      }
+    },
+    "notes": ""
+  },
+  {
+    "intent": "tplink_mesh_setup",
+    "triggers": [
+      "deco mesh setup",
+      "tp link deco install",
+      "tp link mesh setup"
+    ],
+    "response": "Download the TP‑Link Deco app, follow on‑screen steps to create your mesh, place nodes mid‑way between router and weak areas, and update to latest firmware after onboarding.",
+    "categories": [
+      "router",
+      "vendor",
+      "mesh"
+    ],
+    "vendors": [
+      "TP-Link"
+    ],
+    "video_links": {
+      "TP-Link": {
+        "channel": "TP-Link Global",
+        "query": "Set up TP-Link Deco mesh"
+      }
+    },
+    "notes": ""
+  },
+  {
+    "intent": "lenovo_bios_update",
+    "triggers": [
+      "lenovo bios update",
+      "lenovo vantage bios",
+      "update lenovo firmware"
+    ],
+    "response": "Install Lenovo Vantage, check for System Update → BIOS/UEFI updates. Plug into power and do not interrupt. After update, recheck boot order and device security settings.",
+    "categories": [
+      "firmware",
+      "vendor"
+    ],
+    "vendors": [
+      "Lenovo"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "dell_diagnostic",
+    "triggers": [
+      "dell diagnostics",
+      "dell epsa",
+      "pre-boot assessment"
+    ],
+    "response": "Run Dell ePSA diagnostics (power on → F12 → Diagnostics). Record any error codes. Use SupportAssist within Windows for driver/firmware updates.",
+    "categories": [
+      "diagnostics",
+      "vendor"
+    ],
+    "vendors": [
+      "Dell"
+    ],
+    "video_links": {},
+    "notes": ""
+  },
+  {
+    "intent": "hp_hardware_diagnostics",
+    "triggers": [
+      "hardware test hp",
+      "hp diagnostics",
+      "hp pc hardware diagnostics"
+    ],
+    "response": "Use HP PC Hardware Diagnostics UEFI to test memory, battery, and storage. Update BIOS from HP Support Assistant if needed.",
+    "categories": [
+      "diagnostics",
+      "vendor"
+    ],
+    "vendors": [
+      "HP"
+    ],
+    "video_links": {},
+    "notes": ""
+  }
+]
