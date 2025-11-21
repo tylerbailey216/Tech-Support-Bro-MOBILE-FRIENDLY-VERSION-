@@ -1495,29 +1495,29 @@ a:focus-visible {
     }
     .hero-shell .floating-badge {
         position: absolute;
-        width: 150px;
+        width: 170px;
         text-align: center;
         pointer-events: auto;
     }
     .hero-shell .floating-badge:nth-child(1) {
-        top: 0;
-        left: -12px;
-        transform: translateY(-50%);
+        top: 12%;
+        left: -14px;
+        transform: translate(-100%, -50%);
     }
     .hero-shell .floating-badge:nth-child(2) {
-        top: 0;
-        right: -12px;
-        transform: translateY(-50%);
+        top: 12%;
+        right: -14px;
+        transform: translate(100%, -50%);
     }
     .hero-shell .floating-badge:nth-child(3) {
-        bottom: 0;
-        left: -12px;
-        transform: translateY(50%);
+        top: 82%;
+        left: -14px;
+        transform: translate(-100%, -50%);
     }
     .hero-shell .floating-badge:nth-child(4) {
-        bottom: 0;
-        right: -12px;
-        transform: translateY(50%);
+        top: 82%;
+        right: -14px;
+        transform: translate(100%, -50%);
     }
     .tree-header {
         flex-direction: column;
