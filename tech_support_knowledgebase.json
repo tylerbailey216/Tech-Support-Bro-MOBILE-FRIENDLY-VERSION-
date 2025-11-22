@@ -249,7 +249,10 @@
       "Eero",
       "Ubiquiti"
     ],
-    "video_links": {},
+    "video_links": {
+      "Netgear Wi-Fi drops": "https://kb.netgear.com/000064606/Why-is-my-WiFi-connection-dropping-out",
+      "TP-Link Wi-Fi drops": "https://www.tp-link.com/support/faq/2252/"
+    },
     "notes": ""
   },
   {
@@ -270,7 +273,10 @@
       "android"
     ],
     "vendors": [],
-    "video_links": {},
+    "video_links": {
+      "Apple Wi-Fi help": "https://support.apple.com/HT204051",
+      "Android Wi-Fi help": "https://support.google.com/android/answer/9075847"
+    },
     "notes": ""
   },
   {
@@ -310,7 +316,10 @@
       "Xfinity",
       "Spectrum"
     ],
-    "video_links": {},
+    "video_links": {
+      "TP-Link router setup": "https://www.tp-link.com/support/faq/1523/",
+      "Netgear router setup": "https://kb.netgear.com/000049041/How-do-I-set-up-and-install-my-NETGEAR-router"
+    },
     "notes": ""
   },
   {
@@ -417,7 +426,7 @@
       "Microsoft"
     ],
     "video_links": {
-      "Microsoft": "https://support.microsoft.com/account-billing/reset-your-password-729e0b49-cbf2-2ea6-90b1-7b66705de8e5"
+      "Microsoft account recovery": "https://account.live.com/password/reset"
     },
     "notes": ""
   },
@@ -439,7 +448,8 @@
       "Google"
     ],
     "video_links": {
-      "Google": "https://support.google.com/accounts/answer/7682439"
+      "Google account recovery": "https://support.google.com/accounts/answer/7682439",
+      "Account recovery": "https://accounts.google.com/signin/v2/recoveryidentifier"
     },
     "notes": ""
   },
@@ -461,7 +471,8 @@
       "Apple"
     ],
     "video_links": {
-      "Apple": "https://support.apple.com/HT201487"
+      "Apple ID password reset": "https://support.apple.com/HT201487",
+      "iforgot.apple.com": "https://iforgot.apple.com/"
     },
     "notes": ""
   },
@@ -527,7 +538,9 @@
       "updates"
     ],
     "vendors": [],
-    "video_links": {},
+    "video_links": {
+      "Windows Update troubleshooting": "https://support.microsoft.com/help/4027322/windows-10-get-help-with-windows-update-errors"
+    },
     "notes": ""
   },
   {
@@ -543,7 +556,9 @@
       "updates"
     ],
     "vendors": [],
-    "video_links": {},
+    "video_links": {
+      "Update macOS": "https://support.apple.com/HT201541"
+    },
     "notes": ""
   },
   {
@@ -728,7 +743,9 @@
     "vendors": [
       "Apple"
     ],
-    "video_links": {},
+    "video_links": {
+      "Free up space on iPhone": "https://support.apple.com/HT201656"
+    },
     "notes": ""
   },
   {
@@ -747,7 +764,9 @@
       "Google",
       "Samsung"
     ],
-    "video_links": {},
+    "video_links": {
+      "Manage storage on Android": "https://support.google.com/android/answer/7431795"
+    },
     "notes": ""
   },
   {
@@ -928,7 +947,8 @@
       "HP"
     ],
     "video_links": {
-      "HP": "https://support.hp.com/us-en/help/hp-smart"
+      "HP Smart app setup": "https://support.hp.com/us-en/printer-setup/hp-smart-app",
+      "HP printer setup": "https://support.hp.com/us-en/topic/printer-setup"
     },
     "notes": ""
   },
@@ -947,7 +967,7 @@
       "Canon"
     ],
     "video_links": {
-      "Canon": "https://www.usa.canon.com/support"
+      "Canon wireless setup": "https://support.usa.canon.com/kb/index?page=content&id=ART176079"
     },
     "notes": ""
   },
@@ -967,7 +987,7 @@
       "Epson"
     ],
     "video_links": {
-      "Epson": "https://epson.com/Support"
+      "Epson Scan 2 setup": "https://epson.com/Support/wa00369"
     },
     "notes": ""
   },
@@ -987,7 +1007,8 @@
       "Netgear"
     ],
     "video_links": {
-      "Netgear": "https://www.netgear.com/support/"
+      "Netgear firmware (browser)": "https://kb.netgear.com/23442/How-do-I-update-the-firmware-on-my-NETGEAR-router-with-a-web-browser",
+      "Netgear firmware (Nighthawk app)": "https://kb.netgear.com/000061198/How-do-I-update-my-NETGEAR-router-s-firmware-using-the-Nighthawk-app"
     },
     "notes": ""
   },
@@ -1008,7 +1029,7 @@
       "TP-Link"
     ],
     "video_links": {
-      "TP-Link": "https://www.tp-link.com/support/faq/1422/"
+      "TP-Link Deco setup": "https://www.tp-link.com/support/faq/1591/"
     },
     "notes": ""
   },
@@ -1027,7 +1048,9 @@
     "vendors": [
       "Lenovo"
     ],
-    "video_links": {},
+    "video_links": {
+      "Update BIOS with Lenovo Vantage": "https://support.lenovo.com/solutions/ht500222"
+    },
     "notes": ""
   },
   {
@@ -1045,7 +1068,9 @@
     "vendors": [
       "Dell"
     ],
-    "video_links": {},
+    "video_links": {
+      "Dell ePSA diagnostics": "https://www.dell.com/support/kbdoc/en-us/000178178/how-to-run-and-review-dell-epsa-pre-boot-system-assessment-diagnostics"
+    },
     "notes": ""
   },
   {
@@ -1063,7 +1088,9 @@
     "vendors": [
       "HP"
     ],
-    "video_links": {},
+    "video_links": {
+      "HP PC Hardware Diagnostics": "https://support.hp.com/us-en/help/hp-pc-hardware-diagnostics"
+    },
     "notes": ""
   }
 ]
